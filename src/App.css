@@ -1,0 +1,38 @@
+#root {
+  display: flex;
+  flex-wrap: wrap;
+
+  flex-direction: column;
+  width: 800px;
+  margin: auto;
+}
+.filterContainer {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding-left: 0px;
+  width: inherit;
+}
+
+.filter {
+  padding: 10px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-left: 5px;
+}
+.activeFilter {
+  background-color: grey;
+}
+
+.imgCard {
+  width: 250px;
+  height: 250px;
+}
+
+.imgCard:nth-child(3n + 3) {
+  margin-left: 10px;
+}
+.imgCard:nth-child(3n + 1) {
+  margin-right: 10px;
+}
